@@ -1,0 +1,1 @@
+const cube=document.getElementById("cube");let kx=1,ky=1;cube.onmousedown=e=>{const n=e.clientY,o=e.clientX;document.onmousemove=e=>{let t=-(e.clientY-n),u=e.clientX-o;cube.style.transform=`rotateX(${t*ky-30}deg) rotateY(${60+u*kx}deg)`},document.onmouseup=()=>{document.onmousemove=null,document.onmouseup=null}},ball.ondragstart=function(){return!1};
